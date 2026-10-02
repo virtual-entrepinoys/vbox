@@ -1,0 +1,115 @@
+<!-- VBox AI | Systeme.io Snippet | Page 5 - Downsell (Social Media Asset Pack) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+.vb-root{
+  --bg:#080B14; --purple:#8B5CF6; --purple-dark:#7C3AED; --purple2:#9333EA;
+  --hl:#A78BFA; --hl2:#C4B5FD; --text:#FFFFFF; --body:#CBD5E1;
+  --muted:#94A3B8; --dim:#64748B; --card:rgba(255,255,255,0.04);
+  --border:rgba(124,58,237,0.25); --green:#22C55E;
+  font-family:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  color:var(--body); line-height:1.6; background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+.vb-root *,.vb-root *::before,.vb-root *::after{box-sizing:border-box;margin:0;padding:0;}
+.vb-root .vb-section{background:var(--bg);position:relative;overflow:hidden;padding:56px 20px;}
+.vb-root .vb-hero{min-height:100vh;display:flex;align-items:center;}
+.vb-root .vb-wrap{max-width:900px;margin:0 auto;position:relative;z-index:1;width:100%;}
+.vb-root .vb-narrow{max-width:720px;}
+.vb-root .vb-center{text-align:center;}
+.vb-root a{color:var(--hl);text-decoration:none;}
+.vb-root h1,.vb-root h2,.vb-root h3{color:var(--text);line-height:1.15;letter-spacing:-0.02em;font-family:'Space Grotesk','Inter',sans-serif;}
+.vb-root h1{font-size:clamp(30px,5vw,50px);font-weight:700;}
+.vb-root h2{font-size:clamp(25px,3.6vw,36px);font-weight:700;}
+.vb-root h3{font-size:19px;font-weight:600;color:var(--text);}
+.vb-root p{margin-bottom:0;}
+.vb-root .vb-hl{color:var(--hl);}
+.vb-root .vb-eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--hl2);background:rgba(124,58,237,.12);border:1px solid var(--border);padding:7px 15px;border-radius:999px;margin-bottom:20px;}
+.vb-root .vb-lead{font-size:19px;color:var(--body);max-width:620px;margin:18px auto 0;}
+.vb-root .vb-glow-orb{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(24px);}
+.vb-root .vb-orb-a{width:600px;height:600px;top:-220px;left:50%;transform:translateX(-50%);background:radial-gradient(circle,rgba(139,92,246,.40) 0%,rgba(139,92,246,0) 70%);}
+.vb-root .vb-orb-b{width:420px;height:420px;bottom:-200px;right:-120px;background:radial-gradient(circle,rgba(147,51,234,.28) 0%,rgba(147,51,234,0) 70%);}
+.vb-root .vb-btn-primary{background:linear-gradient(135deg,#7C3AED,#9333EA);box-shadow:0 0 32px rgba(139,92,246,.45);color:#fff;border:none;border-radius:12px;padding:16px 32px;font-size:16px;font-weight:600;cursor:pointer;display:inline-block;text-decoration:none;transition:all .2s ease;}
+.vb-root .vb-btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 44px rgba(147,51,234,.75);color:#fff;}
+.vb-root .vb-btn-block{display:block;width:100%;text-align:center;}
+.vb-root .vb-link-ghost{display:inline-block;margin-top:18px;color:var(--muted);font-size:15px;text-decoration:underline;}
+.vb-root .vb-link-ghost:hover{color:var(--hl);}
+.vb-root .vb-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;backdrop-filter:blur(10px);transition:box-shadow .25s,border-color .25s;}
+.vb-root .vb-card:hover{box-shadow:0 0 30px rgba(139,92,246,.22);border-color:rgba(167,139,250,.5);}
+.vb-root .vb-grid{display:grid;gap:20px;}
+.vb-root .vb-g2{grid-template-columns:repeat(2,1fr);}
+.vb-root .vb-g3{grid-template-columns:repeat(3,1fr);}
+.vb-root .vb-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--hl2);background:linear-gradient(135deg,rgba(139,92,246,.45),rgba(147,51,234,.2));border:1px solid var(--border);margin-bottom:16px;}
+.vb-root .vb-check{list-style:none;}
+.vb-root .vb-check li{position:relative;padding-left:34px;margin:13px 0;color:var(--body);}
+.vb-root .vb-check li i{position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:rgba(139,92,246,.22);color:var(--hl2);font-size:11px;display:flex;align-items:center;justify-content:center;}
+.vb-root .vb-callout{border:1px solid var(--purple);border-left:4px solid var(--purple);background:rgba(139,92,246,.08);border-radius:14px;padding:22px 26px;box-shadow:0 0 30px rgba(139,92,246,.16);color:var(--body);}
+.vb-root .vb-placeholder{border:2px dashed var(--border);border-radius:14px;padding:26px;text-align:center;color:var(--muted);font-size:14px;background:rgba(139,92,246,.05);}
+.vb-root .vb-price{color:var(--text);font-size:34px;font-weight:700;display:block;margin-top:6px;font-family:'Space Grotesk',sans-serif;}
+.vb-root .vb-logo{color:var(--text);font-weight:700;font-size:22px;letter-spacing:-.02em;font-family:'Space Grotesk',sans-serif;}
+.vb-root .vb-logo span{color:var(--hl);}
+.vb-root .vb-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 10px;padding:4px 0;position:relative;z-index:2;}
+.vb-root .vb-footer{border-top:1px solid rgba(255,255,255,.07);text-align:center;padding:28px 20px;font-size:13px;color:var(--muted);background:var(--bg);}
+.vb-root .vb-input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:10px;padding:15px 18px;color:var(--text);font-size:16px;margin-bottom:14px;font-family:inherit;}
+.vb-root .vb-input::placeholder{color:var(--muted);}
+.vb-root .vb-badge-ok{width:74px;height:74px;border-radius:50%;margin:0 auto 22px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;background:linear-gradient(135deg,#7C3AED,#9333EA);box-shadow:0 0 42px rgba(139,92,246,.6);}
+.vb-root .vb-badge-ok.vb-green{background:linear-gradient(135deg,#16A34A,#22C55E);box-shadow:0 0 42px rgba(34,197,94,.5);}
+.vb-root .vb-confirm-bar{display:inline-flex;align-items:center;gap:10px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.4);color:#86EFAC;font-weight:600;font-size:15px;padding:10px 18px;border-radius:999px;margin-bottom:24px;}
+.vb-root .vb-small{font-size:14px;color:var(--muted);}
+.vb-root .vb-hr{border:none;border-top:1px solid rgba(124,58,237,.25);max-width:900px;margin:8px auto;}
+.vb-root .vb-sec-head{text-align:center;margin-bottom:38px;}
+.vb-root .vb-step-num{font-size:12px;font-weight:700;color:var(--hl);letter-spacing:.12em;margin-bottom:8px;}
+.vb-root .vb-mt{margin-top:28px;}
+.vb-root .vb-mt-sm{margin-top:16px;}
+.vb-root details.vb-faq{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;padding:0 22px;}
+.vb-root details.vb-faq summary{cursor:pointer;list-style:none;padding:18px 0;color:var(--text);font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+.vb-root details.vb-faq summary::-webkit-details-marker{display:none;}
+.vb-root details.vb-faq summary::after{content:'\002B';color:var(--hl);font-size:22px;font-weight:400;}
+.vb-root details.vb-faq[open] summary::after{content:'\2212';}
+.vb-root details.vb-faq p{padding:0 0 18px;color:var(--body);}
+.vb-root .vb-timeline{position:relative;}
+.vb-root .vb-timeline::before{content:'';position:absolute;left:21px;top:12px;bottom:12px;width:2px;background:linear-gradient(var(--purple),rgba(139,92,246,.1));}
+.vb-root .vb-tl-item{position:relative;display:flex;gap:20px;margin-bottom:24px;}
+.vb-root .vb-tl-item:last-child{margin-bottom:0;}
+.vb-root .vb-tl-num{flex:0 0 44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7C3AED,#9333EA);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(139,92,246,.55);z-index:1;}
+@media(max-width:760px){
+  .vb-root .vb-section{padding:44px 16px;}
+  .vb-root .vb-g2,.vb-root .vb-g3{grid-template-columns:1fr;}
+  .vb-root .vb-btn-primary{width:100%;text-align:center;}
+  .vb-root .vb-lead{font-size:17px;}
+  .vb-root .vb-nav{flex-direction:column;gap:6px;}
+}
+
+</style>
+
+<div class="vb-root">
+
+<div class="vb-section">
+  <div class="vb-glow-orb vb-orb-a"></div>
+  <div class="vb-wrap vb-center" style="max-width:620px">
+    <div class="vb-nav"><div class="vb-logo">VBox <span>AI</span></div></div>
+    <div style="padding-top:22px">
+      <div class="vb-eyebrow">Totally understand</div>
+      <h1>Just the essentials &mdash; <span class="vb-hl">at a smaller investment.</span></h1>
+      <p class="vb-lead">Not ready for the full suite? Start with the piece most agents use every single week.</p>
+      <div class="vb-card" style="margin-top:32px;text-align:left">
+        <h3>Social Media Asset Pack</h3>
+        <ul class="vb-check" style="margin-top:10px">
+          <li><i class="fa-solid fa-check"></i>Branded post templates for just listed, under contract, and sold</li>
+          <li><i class="fa-solid fa-check"></i>Ready-to-use captions written in your brand voice</li>
+          <li><i class="fa-solid fa-check"></i>Profile and highlight graphics that match your visual direction</li>
+        </ul>
+        <!-- ===== INSERT SYSTEME.IO DOWNSELL ORDER FORM HERE ===== -->
+        <div class="vb-placeholder" style="margin-top:18px">Downsell price goes here<span class="vb-price" style="font-size:30px">$___</span></div>
+        <!-- ===== END order form ===== -->
+        <a href="#" class="vb-btn-primary vb-btn-block" style="margin-top:22px">Yes, I'll grab just this&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+        <!-- Link to page6 Upsell 2 -->
+        <div class="vb-center"><a href="#" class="vb-link-ghost">No thanks, continue to my order &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vb-footer">&copy; 2026 VBox AI &middot; vbox-ai.com &middot; hello@vbox-ai.com</div>
+</div>

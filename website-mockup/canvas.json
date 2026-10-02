@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "screens": [
+    {"screen_id": "home", "frame_kind": "desktop", "label": "Hero / Homepage"},
+    {"screen_id": "how-it-works", "frame_kind": "desktop", "label": "How It Works"},
+    {"screen_id": "products", "frame_kind": "desktop", "label": "Three Products"},
+    {"screen_id": "why-vbox", "frame_kind": "desktop", "label": "Why VBox AI"},
+    {"screen_id": "get-started", "frame_kind": "desktop", "label": "CTA & Footer"},
+    {"screen_id": "page1-optin", "frame_kind": "desktop", "label": "Funnel 1 · Opt-in"},
+    {"screen_id": "page8-optin-thankyou", "frame_kind": "desktop", "label": "Funnel 1b · Checklist Delivery"},
+    {"screen_id": "page2-bridge", "frame_kind": "desktop", "label": "Funnel 2 · Bridge"},
+    {"screen_id": "page3-sales", "frame_kind": "desktop", "label": "Funnel 3 · Sales Page"},
+    {"screen_id": "page4-upsell1", "frame_kind": "desktop", "label": "Funnel 4 · Upsell: Marketing Suite"},
+    {"screen_id": "page5-downsell", "frame_kind": "desktop", "label": "Funnel 5 · Downsell: Social Pack"},
+    {"screen_id": "page6-upsell2", "frame_kind": "desktop", "label": "Funnel 6 · Upsell: Website"},
+    {"screen_id": "page7-welcome", "frame_kind": "desktop", "label": "Funnel 7 · Welcome"}
+  ]
+}

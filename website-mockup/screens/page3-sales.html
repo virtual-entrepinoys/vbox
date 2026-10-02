@@ -1,0 +1,175 @@
+<!-- VBox AI | Systeme.io Custom HTML | Page 3: Sales Page (Brand Foundation Package) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VBox AI | Brand Foundation Package</title>
+<style>
+/* ===== VBox AI shared styles (same in every page) ===== */
+:root{--bg:#080B14;--purple:#7C3AED;--purple2:#9333EA;--hl:#A78BFA;--hl2:#C4B5FD;--text:#CBD5E1;--muted:#94A3B8;--card:rgba(255,255,255,0.04);--border:rgba(124,58,237,0.3);--green:#22C55E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,'Segoe UI',Inter,Roboto,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:var(--hl);text-decoration:none}
+h1,h2,h3{color:#fff;line-height:1.2;letter-spacing:-0.02em}
+h1{font-size:clamp(32px,5vw,52px);font-weight:800}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+.hl{color:var(--hl)}
+.wrap{max-width:900px;margin:0 auto;padding:60px 24px;position:relative;z-index:1}
+.center{text-align:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--hl2);background:rgba(124,58,237,.12);border:1px solid var(--border);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.lead{font-size:19px;color:var(--text);max-width:640px;margin:18px auto 0}
+.glow-sec{position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(20px)}
+.orb-a{width:620px;height:620px;top:-220px;left:50%;transform:translateX(-50%);background:radial-gradient(circle,rgba(124,58,237,.45) 0%,rgba(124,58,237,0) 70%)}
+.orb-b{width:420px;height:420px;bottom:-200px;right:-120px;background:radial-gradient(circle,rgba(147,51,234,.3) 0%,rgba(147,51,234,0) 70%)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--purple),var(--purple2));color:#fff;font-weight:700;font-size:18px;padding:18px 34px;border-radius:12px;border:0;cursor:pointer;box-shadow:0 0 24px rgba(124,58,237,.55),0 8px 30px rgba(124,58,237,.3);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(147,51,234,.8),0 10px 36px rgba(124,58,237,.45)}
+.btn-block{display:block;width:100%;text-align:center}
+.link-ghost{display:inline-block;margin-top:18px;color:var(--muted);font-size:15px;text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;backdrop-filter:blur(10px);transition:box-shadow .25s,border-color .25s}
+.card:hover{box-shadow:0 0 30px rgba(124,58,237,.25);border-color:rgba(167,139,250,.55)}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}
+.icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;background:linear-gradient(135deg,rgba(124,58,237,.5),rgba(147,51,234,.25));border:1px solid var(--border);margin-bottom:16px}
+.check{list-style:none}.check li{position:relative;padding-left:32px;margin:12px 0}
+.check li:before{content:'✓';position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:rgba(124,58,237,.25);color:var(--hl2);font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.callout{border:1px solid var(--purple);background:rgba(124,58,237,.08);border-radius:16px;padding:24px 28px;box-shadow:0 0 30px rgba(124,58,237,.18)}
+.placeholder{border:2px dashed var(--border);border-radius:14px;padding:26px;text-align:center;color:var(--muted);font-size:14px;background:rgba(124,58,237,.05)}
+.nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:22px 24px;position:relative;z-index:2}
+.logo{color:#fff;font-weight:800;font-size:22px;letter-spacing:-.02em}.logo span{color:var(--hl)}
+.footer{border-top:1px solid rgba(255,255,255,.06);text-align:center;padding:30px 24px;font-size:14px;color:var(--muted)}
+.input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:10px;padding:16px 18px;color:var(--muted);font-size:16px;margin-bottom:14px;text-align:left}
+.badge-ok{width:72px;height:72px;border-radius:50%;margin:0 auto 22px;display:flex;align-items:center;justify-content:center;font-size:34px;color:#fff;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--purple2));box-shadow:0 0 40px rgba(124,58,237,.6)}
+.badge-ok.green{background:linear-gradient(135deg,#16A34A,#22C55E);box-shadow:0 0 40px rgba(34,197,94,.45)}
+.small{font-size:14px;color:var(--muted)}
+@media(max-width:760px){.wrap{padding:40px 16px}.g2,.g3,.g4{grid-template-columns:1fr}.btn{font-size:16px;padding:16px 24px;width:100%;text-align:center}.lead{font-size:17px}}
+/* ===== end shared styles ===== */
+.sec-head{text-align:center;margin-bottom:40px}
+.step-num{font-size:13px;font-weight:700;color:var(--hl);letter-spacing:.1em;margin-bottom:8px}
+.trust{text-align:center}.trust .icon{margin:0 auto 14px}
+/* CSS-only FAQ accordion (uses <details>) */
+details{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:20px 0;color:#fff;font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';color:var(--hl);font-size:24px;font-weight:400}
+details[open] summary:after{content:'−'}
+details p{padding:0 0 20px}
+</style>
+</head>
+<body>
+<header data-design-id="nav-sales-a7b8c9" class="nav"><div class="logo">VBox <span>AI</span></div><a href="#pricing" class="small" style="color:var(--hl2)">Get Started →</a></header>
+<main data-design-id="main-sales-b8c9d1">
+
+<!-- HERO -->
+<section data-design-id="hero-sales-c9d1e2" class="glow-sec">
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="wrap center" style="padding-top:80px;padding-bottom:90px">
+    <div class="eyebrow">✦ The Brand Foundation Package</div>
+    <h1>Your brand, <span class="hl">done for you.</span></h1>
+    <p class="lead">Bios, profiles, brand voice, and visibility — researched, written, and verified for you. One less thing on your plate.</p>
+    <div style="margin-top:34px"><a href="#pricing" class="btn">Get the Brand Foundation Package →</a></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section data-design-id="problem-sales-d1e2f3">
+  <div class="wrap">
+    <div class="sec-head"><h2>You know you need this.<br><span class="hl">You just don't have time for it.</span></h2></div>
+    <div class="grid g3">
+      <article data-design-id="pain-card-1-e2f3a4" class="card"><div class="icon">⌂</div><h3>Your Zillow bio is from 2019</h3><p style="margin-top:8px">Outdated stats, old designations, and a bio that doesn't sound like you anymore.</p></article>
+      <article data-design-id="pain-card-2-f3a4b5" class="card"><div class="icon">⇄</div><h3>Every profile says something different</h3><p style="margin-top:8px">LinkedIn, Realtor.com, Instagram — inconsistent info makes clients (and AI search) hesitate.</p></article>
+      <article data-design-id="pain-card-3-a4b5c6" class="card"><div class="icon">⌖</div><h3>Google Business? Neglected.</h3><p style="margin-top:8px">It's where local buyers find you first, and it's been on your list for months.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section data-design-id="solution-sales-b5c6d7">
+  <div class="wrap">
+    <div class="sec-head"><h2>One package. Everything set up.<br><span class="hl">Nothing left to figure out.</span></h2></div>
+    <div class="grid g3">
+      <article data-design-id="step-card-1-c6d7e8" class="card"><div class="step-num">STEP 01</div><h3>Complete Intake</h3><p style="margin-top:8px">Answer a simple form about you, your market, and your goals — at your own pace.</p></article>
+      <article data-design-id="step-card-2-d7e8f9" class="card"><div class="step-num">STEP 02</div><h3>We Build It</h3><p style="margin-top:8px">We verify your info, write every piece, and check it all for accuracy and compliance.</p></article>
+      <article data-design-id="step-card-3-e8f9a1" class="card"><div class="step-num">STEP 03</div><h3>Copy. Paste. Done.</h3><p style="margin-top:8px">You get finished files plus a checklist that walks you through every platform.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section data-design-id="included-sales-f9a1b2">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">What's Included</div><h2>Everything your brand needs, <span class="hl">in one place.</span></h2></div>
+    <div class="card">
+      <div class="grid g2" style="gap:0 40px">
+        <ul class="check">
+          <li>Verified Professional Profile</li>
+          <li>Master Bio</li>
+          <li>5 Platform Bios — Zillow, Realtor.com, LinkedIn, Google, Instagram</li>
+          <li>Email Signature</li>
+          <li>Elevator Pitch</li>
+          <li>Brand Foundation Guide</li>
+        </ul>
+        <ul class="check">
+          <li>Brand Story &amp; Voice</li>
+          <li>Visual Direction</li>
+          <li>Content Pillars</li>
+          <li>Local Visibility Audit</li>
+          <li>Implementation Checklist</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section data-design-id="trust-sales-a1b2c3">
+  <div class="wrap">
+    <div class="grid g3">
+      <article data-design-id="trust-badge-1-b2c3d4" class="card trust"><div class="icon">⚖</div><h3>Fair Housing Compliant</h3><p class="small" style="margin-top:6px">Every word reviewed against Fair Housing guidelines.</p></article>
+      <article data-design-id="trust-badge-2-c3d4e5" class="card trust"><div class="icon">✓</div><h3>AI-Verified Accuracy</h3><p class="small" style="margin-top:6px">A dedicated verification step catches errors before you see them.</p></article>
+      <article data-design-id="trust-badge-3-d4e5f6" class="card trust"><div class="icon">✦</div><h3>Built on Real Info</h3><p class="small" style="margin-top:6px">Nothing invented. Only your real credentials and experience.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section data-design-id="pricing-sales-e5f6a7" id="pricing" class="glow-sec">
+  <div class="orb orb-a" style="top:-120px"></div>
+  <div class="wrap center">
+    <h2>Brand Foundation <span class="hl">Package</span></h2>
+    <div class="card" style="max-width:520px;margin:30px auto 0">
+      <!-- Insert your Systeme.io pricing block here -->
+      <div class="placeholder">Your price / payment plan goes here<br><strong style="color:#fff;font-size:34px">$___</strong></div>
+      <!-- END pricing block -->
+      <a href="#" class="btn btn-block" style="margin-top:22px">Get Started →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section data-design-id="faq-sales-f6a7b8">
+  <div class="wrap" style="max-width:760px">
+    <div class="sec-head"><h2>Questions? <span class="hl">Answered.</span></h2></div>
+    <details><summary>How long does it take?</summary><p>Once your intake form is complete, your files are delivered within [X business days]. The intake itself takes about 15–20 minutes.</p></details>
+    <details><summary>Do I need tech skills?</summary><p>None. You'll get finished text and a step-by-step checklist. If you can copy and paste, you're set.</p></details>
+    <details><summary>Is it compliant?</summary><p>Yes. Everything is reviewed against Fair Housing guidelines and checked for accurate licensing and brokerage disclosures.</p></details>
+    <details><summary>What happens after I pay?</summary><p>You'll get a confirmation email with your intake form link. Complete it, and we take it from there.</p></details>
+    <details><summary>What if my info changes?</summary><p>Your Master Bio and Brand Guide make updates simple. Just reach out at hello@vbox-ai.com and we'll help you refresh.</p></details>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section data-design-id="cta-sales-a7b8c1" class="glow-sec">
+  <div class="orb orb-a" style="top:-80px"></div>
+  <div class="wrap center" style="padding-bottom:90px">
+    <h2>Ready to check this <span class="hl">off your list?</span></h2>
+    <p class="lead">Hand it over. We'll take it from here.</p>
+    <div style="margin-top:30px"><a href="#pricing" class="btn">Get the Brand Foundation Package →</a></div>
+  </div>
+</section>
+</main>
+<footer data-design-id="footer-sales-b8c1d2" class="footer">© 2026 VBox AI · vbox-ai.com · hello@vbox-ai.com</footer>
+</body>
+</html>

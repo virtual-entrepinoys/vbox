@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+  </script>
+  <style>
+    .grid-field{background-image:linear-gradient(rgba(255,255,255,.032) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,black 0%,rgba(0,0,0,.72) 58%,transparent 96%)}
+    .hero-bloom{background:radial-gradient(circle,rgba(139,92,246,.28) 0%,rgba(139,92,246,.12) 34%,transparent 68%);filter:blur(5px)}
+    .violet-text{background:linear-gradient(100deg,#ffffff 12%,#d8c7ff 52%,#9c7cff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .glass{background:rgba(17,21,34,.68);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  </style>
+  <title>VBox AI — Your brand, done for you.</title>
+</head>
+<body class="w-[1440px] overflow-x-hidden bg-[#080B14] font-sans text-white antialiased">
+  <main data-design-id="main-hero-f7a921" class="relative min-h-[900px] overflow-hidden">
+    <div class="grid-field absolute inset-0"></div>
+    <div class="hero-bloom absolute left-1/2 top-[70px] h-[690px] w-[900px] -translate-x-1/2 rounded-full"></div>
+    <div class="absolute left-[110px] top-[280px] h-[1px] w-[180px] bg-gradient-to-r from-transparent to-[#8B5CF6]/40"></div>
+    <div class="absolute right-[110px] top-[280px] h-[1px] w-[180px] bg-gradient-to-l from-transparent to-[#22D3EE]/30"></div>
+
+    <header data-design-id="header-primary-4bc210" class="relative z-20 px-20 pt-6">
+      <nav data-design-id="nav-primary-1d8fe4" class="glass mx-auto flex h-[72px] max-w-[1280px] items-center justify-between rounded-2xl border border-white/[0.08] px-7 shadow-[0_18px_60px_rgba(0,0,0,.28)]">
+        <a href="#" class="flex items-center gap-3" aria-label="VBox AI home">
+          <span class="flex h-9 w-9 items-center justify-center rounded-xl border border-[#A78BFA]/40 bg-[#8B5CF6]/15 text-sm font-extrabold text-[#C4B5FD] shadow-[0_0_24px_rgba(139,92,246,.28)]">V</span>
+          <span class="text-[18px] font-semibold tracking-[-0.02em]">VBox <span class="text-[#A78BFA]">AI</span></span>
+        </a>
+        <div class="flex items-center gap-9 text-sm font-medium text-[#A7B0C0]">
+          <a href="#" class="transition-colors hover:text-white">How It Works</a>
+          <a href="#" class="transition-colors hover:text-white">Products</a>
+          <a href="#" class="transition-colors hover:text-white">Get Started</a>
+        </div>
+        <button data-design-id="nav-cta-7c82bd" type="button" class="rounded-xl border border-[#A78BFA]/40 bg-[#8B5CF6]/15 px-5 py-2.5 text-sm font-semibold text-[#EDE9FE] transition hover:bg-[#8B5CF6]/25">Build my brand <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></button>
+      </nav>
+    </header>
+
+    <section data-design-id="hero-section-b3a5e8" class="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-8 pb-16 pt-[110px] text-center">
+      <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-white/[0.09] bg-white/[0.035] px-4 py-2 text-xs font-semibold tracking-[0.13em] text-[#C4B5FD] uppercase">
+        <span class="h-1.5 w-1.5 rounded-full bg-[#A78BFA] shadow-[0_0_10px_#A78BFA]"></span>
+        Built for modern real estate agents
+      </div>
+      <h1 class="violet-text max-w-[940px] text-[78px] font-[750] leading-[0.98] tracking-[-0.058em]">Your brand,<br>done for you.</h1>
+      <p class="mt-8 max-w-[760px] text-[20px] leading-8 tracking-[-0.015em] text-[#A7B0C0]">The complete AI-powered setup for real estate agents who are too busy building their business to build their brand.</p>
+      <div class="mt-10 flex items-center gap-4">
+        <button data-design-id="hero-primary-cta-63d4bf" type="button" class="group rounded-xl bg-gradient-to-r from-[#7C3AED] to-[#9F67FF] px-7 py-4 text-[15px] font-semibold text-white shadow-[0_0_40px_rgba(139,92,246,.42)] transition hover:-translate-y-0.5 hover:shadow-[0_0_54px_rgba(139,92,246,.54)]">Get Started <i class="fa-solid fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i></button>
+        <button data-design-id="hero-secondary-cta-d5e109" type="button" class="rounded-xl border border-white/[0.14] bg-white/[0.035] px-7 py-4 text-[15px] font-semibold text-[#E7E9EF] transition hover:border-white/25 hover:bg-white/[0.06]"><i class="fa-regular fa-circle-play mr-2 text-[#A78BFA]"></i> See How It Works</button>
+      </div>
+      <p class="mt-5 flex items-center gap-2 text-[12px] font-medium tracking-[0.08em] text-[#737C8E] uppercase"><i class="fa-solid fa-bolt text-[10px] text-[#A78BFA]"></i> Powered by AI. Delivered like a pro.</p>
+
+      <div class="mt-[92px] w-full">
+        <p class="mb-5 text-[11px] font-semibold tracking-[0.18em] text-[#60697A] uppercase">Your complete visibility system</p>
+        <div class="grid grid-cols-3 gap-4">
+          <article data-design-id="product-tease-1-428fce" class="glass group flex items-center justify-between rounded-2xl border border-white/[0.08] px-6 py-5 text-left transition hover:border-[#8B5CF6]/40 hover:bg-[#15192A]/80">
+            <div class="flex items-center gap-4"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#8B5CF6]/12 text-[#B9A3FF]"><i class="fa-solid fa-fingerprint"></i></span><div><p class="text-[11px] font-semibold tracking-[0.13em] text-[#767F91] uppercase">01</p><h2 class="mt-1 text-[15px] font-semibold">Brand Foundation</h2></div></div><i class="fa-solid fa-arrow-right text-xs text-[#596174] transition group-hover:translate-x-1 group-hover:text-[#A78BFA]"></i>
+          </article>
+          <article data-design-id="product-tease-2-e791a3" class="glass group flex items-center justify-between rounded-2xl border border-[#8B5CF6]/22 px-6 py-5 text-left shadow-[0_0_35px_rgba(139,92,246,.08)] transition hover:border-[#8B5CF6]/45">
+            <div class="flex items-center gap-4"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#8B5CF6]/12 text-[#B9A3FF]"><i class="fa-solid fa-bullhorn"></i></span><div><p class="text-[11px] font-semibold tracking-[0.13em] text-[#767F91] uppercase">02</p><h2 class="mt-1 text-[15px] font-semibold">Marketing Suite</h2></div></div><i class="fa-solid fa-arrow-right text-xs text-[#596174] transition group-hover:translate-x-1 group-hover:text-[#A78BFA]"></i>
+          </article>
+          <article data-design-id="product-tease-3-932cab" class="glass group flex items-center justify-between rounded-2xl border border-white/[0.08] px-6 py-5 text-left transition hover:border-[#8B5CF6]/40 hover:bg-[#15192A]/80">
+            <div class="flex items-center gap-4"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#8B5CF6]/12 text-[#B9A3FF]"><i class="fa-solid fa-globe"></i></span><div><p class="text-[11px] font-semibold tracking-[0.13em] text-[#767F91] uppercase">03</p><h2 class="mt-1 text-[15px] font-semibold">Website Building</h2></div></div><i class="fa-solid fa-arrow-right text-xs text-[#596174] transition group-hover:translate-x-1 group-hover:text-[#A78BFA]"></i>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
